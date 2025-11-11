@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Vintage Leica M3 Camera",
+        "description": "Handcrafted full-grain leather bag with adjustable shoulder strap and multiple compartments.",
+        "currentBidPrice": 2850,
+        "timeLeft": 2,
+        "bidsCount": 12,
+        "image": "https://i.ibb.co.com/9HbTpyRL/Bid1-min.png"
+    },
+    {
+        "id": 2,
+        "title": "1965 Gibson SG Standard Electric Guitar",
+        "description": "13-inch laptop with Apple M2 chip, 8GB RAM, and 256GB SSD. Excellent condition.",
+        "currentBidPrice": 2850,
+        "timeLeft": 2,
+        "bidsCount": 24,
+        "image": "https://i.ibb.co.com/whLrRrsb/Bid2-min.png"
+    },
+    {
+        "id": 3,
+        "title": "Original Apple Macintosh 128K (1984)",
+        "description": "Noise-canceling over-ear headphones with up to 30 hours of battery life.",
+        "currentBidPrice": 2850,
+        "timeLeft": 2,
+        "bidsCount": 17,
+        "image": "https://i.ibb.co.com/zTZyc38d/Bid3-min.png"
+    },
+    {
+        "id": 4,
+        "title": "Rolex Submariner 16610",
+        "description": "Handmade electric guitar with flame maple top and Seymour Duncan pickups.",
+        "currentBidPrice": 2850,
+        "timeLeft": 2,
+        "bidsCount": 9,
+        "image": "https://i.ibb.co.com/YTBcyhT5/Bid4-min.png"
+    },
+    {
+        "id": 5,
+        "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+        "description": "Gold-plated pocket watch from the late 19th century, fully functional and recently serviced.",
+        "currentBidPrice": 2850,
+        "timeLeft": 2,
+        "bidsCount": 6,
+        "image": "https://i.ibb.co.com/VYLfh0hR/Bid5-min.png"
+    },
+    {
+        "id": 6,
+        "title": "Mid-Century Modern Eames Lounge Chair",
+        "description": "Iconic 7,500+ piece LEGO Star Wars set, brand new in sealed box.",
+        "currentBidPrice": 2850,
+        "timeLeft": 2,
+        "bidsCount": 33,
+        "image": "https://i.ibb.co.com/SX0B1hDq/Bid6-min.png"
+    }
+]
