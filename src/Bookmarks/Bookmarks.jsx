@@ -14,10 +14,10 @@ const Bookmarks = () => {
             //       <p className='font-bold'> Favourite Items</p>
             // </div>
         //     <hr />
-        //     <div className='mb-8'>
-        //         <h2 className='my-5 font-bold'>No favourites yet</h2>
-        //         <div className=''>Click the heart icon on any item <br /> to add it to your favorites</div>
-        //     </div>
+            // <div className='mb-8'>
+            //     <h2 className='my-5 font-bold'>No favourites yet</h2>
+            //     <div className=''>Click the heart icon on any item <br /> to add it to your favorites</div>
+            // </div>
         //     <hr />
             // <div className='flex justify-around mt-5'>
             //     <p className='font-bold'>Total bids Amount</p>

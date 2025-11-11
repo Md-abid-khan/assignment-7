@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaRegHeart } from "react-icons/fa";
 
 const Table = ({ blog ,addToBookmark}) => {
     // console.log(blog);
+    const [disable,setDisable] =useState(false)
     const { bidsCount, currentBidPrice, description, id, image, timeLeft, title } = blog;
+
+
+
+    const handleButton = () => {
+    setDisable(true);
+  }
     return (
         <div className='flex justify-between m-5 p-5 font-bold'>
             <div className='flex gap-2'>
@@ -13,9 +20,14 @@ const Table = ({ blog ,addToBookmark}) => {
             <div className='flex justify-between gap-15 font-bold'>
                 <h2> {currentBidPrice}   </h2>
                 <h2>{timeLeft} Days left</h2>
-                <div onClick={()=>{addToBookmark(blog)}}>
+                <div  
+                
+                onClick={()=>{addToBookmark(blog, currentBidPrice)}}>
+                    <div className={`${disable ? "bg-red-500 cursor-not-allowed": "  cursor-pointer"}`} onClick={handleButton}>
 
                 <FaRegHeart />
+                    </div>
+
                 </div>
 
             </div>
