@@ -9,6 +9,7 @@ import MainDesion from './MainDesign/MainDesion'
 import Navbar from './Navbar/Navbar'
 import Books from './Bookmarks/Books/Books'
 import { CiHeart } from "react-icons/ci"
+import Swal from 'sweetalert2'
 
 function App() {
   const [bookmarks, setBookmarks] = useState([]);
@@ -23,6 +24,7 @@ function App() {
     const newAmount = count + num;
     setCount(newAmount)
     // setDisable(disable);
+    // alert("Bookmark add successfully")
   }
 
   const removeBooksItems = (id, num) => {
@@ -31,6 +33,29 @@ function App() {
     setBookmarks(remainingItems)
     setCount(count - num)
 
+  }
+
+  const sweetalerts =()=>{
+    Swal.fire({
+      title: "Add to Bookmark Successful",
+      ConfirmButtonText : "OK",
+      icon : "success",
+      position: "top-end",
+      timer: 1000,
+      width: 400,
+      height: "200px"
+    })
+  }
+  const sweetalertsForRemove =()=>{
+    Swal.fire({
+      title: "Remove From Bookmark Successful",
+      ConfirmButtonText : "OK",
+      icon : "success",
+      position: "top-end",
+      timer: 1000,
+      width: 400,
+      height: "200px"
+    })
   }
 
   // const handleButton = () => {
@@ -56,6 +81,7 @@ function App() {
       <div className="mainContainer flex text-center">
         <div className="leftContainer w-[70%]">
           <MainDesion addToBookmark={addToBookmark}
+          sweetalerts={sweetalerts}
           ></MainDesion>
         </div>
         <div className="rightContainer w-[30%] bg-slate-600 p-5 rounded-2xl mt-24 mb-5">
@@ -86,7 +112,8 @@ function App() {
             {
               bookmarks.map(books => <div> <Books books={books}
 
-                removeBooksItems={removeBooksItems} ></Books> </div>)
+                removeBooksItems={removeBooksItems}
+                sweetalertsForRemove={sweetalertsForRemove} ></Books> </div>)
 
             }
           </div>

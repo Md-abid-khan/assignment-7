@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaRegHeart } from "react-icons/fa";
 
-const Table = ({ blog, addToBookmark }) => {
+const Table = ({ blog, addToBookmark ,sweetalerts}) => {
     // console.log(blog);
     const [disable, setDisable] = useState(false)
     const { bidsCount, currentBidPrice, description, id, image, timeLeft, title } = blog;
@@ -27,8 +27,11 @@ const Table = ({ blog, addToBookmark }) => {
 
                     onClick={() => { addToBookmark(blog, currentBidPrice) }}>
                     <div className={`${disable ? "bg-red-500 cursor-not-allowed " : "  cursor-pointer"}`} onClick={handleButton}>
+                        <div onClick={sweetalerts}>
+                            <FaRegHeart size={20}/>
+                        </div>
 
-                        <FaRegHeart size={20}/>
+                        
                     </div>
 
                 </div>

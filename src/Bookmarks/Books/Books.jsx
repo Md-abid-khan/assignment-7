@@ -1,6 +1,6 @@
 
 
-const Books = ({ books, removeBooksItems }) => {
+const Books = ({ books, removeBooksItems ,sweetalertsForRemove}) => {
     
     // console.log(books);
     // if(books.length === 0){
@@ -48,7 +48,12 @@ const Books = ({ books, removeBooksItems }) => {
                 </div>
 
 
-                <button onClick={() => removeBooksItems(books.id, books.currentBidPrice)}>X</button>
+                <button onClick={() => removeBooksItems(books.id, books.currentBidPrice)}>
+                    <div onClick={sweetalertsForRemove}>
+                        X
+                    </div>
+                    
+                    </button>
             </div>
         </div>
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Table from './table.jsx/Table';
 
-const MainDesion = ({ addToBookmark }) => {
+const MainDesion = ({ addToBookmark ,sweetalerts}) => {
   const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
@@ -33,7 +33,8 @@ const MainDesion = ({ addToBookmark }) => {
             {
               blogs.map(blog => <div> <Table
                 key={blog.id} blog={blog}
-                addToBookmark={addToBookmark} ></Table> </div>)
+                addToBookmark={addToBookmark}
+                sweetalerts={sweetalerts} ></Table> </div>)
             }
           </div>
 
