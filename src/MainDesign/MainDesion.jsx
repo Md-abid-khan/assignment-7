@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Table from './table.jsx/Table';
 
-const MainDesion = ({ addToBookmark ,sweetalerts}) => {
+const MainDesion = ({ addToBookmark, sweetalerts }) => {
   const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
@@ -9,7 +9,6 @@ const MainDesion = ({ addToBookmark ,sweetalerts}) => {
       .then(res => res.json())
       .then(data => setBlogs(data));
   }, [])
-  // console.log(blogs);
 
 
   return (
@@ -18,7 +17,6 @@ const MainDesion = ({ addToBookmark ,sweetalerts}) => {
       <h2>Discover and bid on extraordinary items</h2>
       <div className="overflow-x-auto bg-slate-600 m-5 rounded-2xl">
         <div className="table">
-
           <ul className='flex justify-between m-5 text-center p-5  font-bold'>
             <li>Items</li>
             <div className='flex justify-around gap-10'>
@@ -26,9 +24,8 @@ const MainDesion = ({ addToBookmark ,sweetalerts}) => {
               <li>Time Left</li>
               <li>Bid Now</li>
             </div>
-
           </ul>
-
+          <hr className='mx-2' />
           <div>
             {
               blogs.map(blog => <div> <Table
@@ -37,13 +34,6 @@ const MainDesion = ({ addToBookmark ,sweetalerts}) => {
                 sweetalerts={sweetalerts} ></Table> </div>)
             }
           </div>
-
-
-
-
-
-          {/* foot */}
-
         </div>
       </div>
     </div>

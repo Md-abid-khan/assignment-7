@@ -23,6 +23,7 @@ const Table = ({ blog, addToBookmark ,sweetalerts}) => {
             <div className='flex justify-between gap-15 font-bold'>
                 <h2> {currentBidPrice}   </h2>
                 <h2>{timeLeft} Days left</h2>
+                
                 <div
 
                     onClick={() => { addToBookmark(blog, currentBidPrice) }}>
