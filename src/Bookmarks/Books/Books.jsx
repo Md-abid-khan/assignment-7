@@ -19,14 +19,14 @@ const Books = ({ books, removeBooksItems, sweetalertsForRemove ,hiddenDiv }) => 
                         <p>Bid: {books.bidsCount}</p>
                     </div>
                 </div>
-                <button onClick={() => removeBooksItems(books.id, books.currentBidPrice)}>
-                    <div onClick={sweetalertsForRemove}>
+                <div  onClick={() => removeBooksItems(books.id, books.currentBidPrice)}>
+                    <div className="cursor-pointer" onClick={sweetalertsForRemove}>
                         <div onClick={hiddenDiv}>
                            X 
                         </div>
                         
                     </div>
-                </button>
+                </div>
             </div>
         </div>
 
