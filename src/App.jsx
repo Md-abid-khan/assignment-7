@@ -14,7 +14,7 @@ function App() {
   const [bookmarks, setBookmarks] = useState([]);
   const [count, setCount] = useState(0);
   // const [disable,setDisable]=useState(false);
-  
+
 
   const addToBookmark = (id, num) => {
     // console.log("hello" , id);
@@ -29,7 +29,8 @@ function App() {
     const remainingItems = bookmarks.filter(books => books.id !== id);
     // console.log(remainingItems);
     setBookmarks(remainingItems)
-    
+    setCount(count - num)
+
   }
 
   // const handleButton = () => {
@@ -57,7 +58,7 @@ function App() {
           <MainDesion addToBookmark={addToBookmark}
           ></MainDesion>
         </div>
-        <div className="rightContainer w-[30%] bg-slate-600 p-5 rounded-2xl mt-5 mb-5">
+        <div className="rightContainer w-[30%] bg-slate-600 p-5 rounded-2xl mt-24 mb-5">
           <div className='flex justify-center gap-1 mb-2 mt-10 '>
 
             <CiHeart size={25} />
@@ -65,13 +66,31 @@ function App() {
           </div>
           <hr />
           <div>
+
+            <div className='mb-8'>
+              <h2 className='my-5 font-bold'>No favourites yet</h2>
+              <div className=''>Click the heart icon on any item <br /> to add it to your favorites</div>
+            </div>
+          </div>
+          {/* { hide  &&(
+            <div className={`${!hide} && "hidden"`}>
+
+            <div className='mb-8'>
+              <h2 className='my-5 font-bold'>No favourites yet</h2>
+              <div className=''>Click the heart icon on any item <br /> to add it to your favorites</div>
+            </div>
+          </div>
+
+          )} */}
+          <div>
             {
               bookmarks.map(books => <div> <Books books={books}
+
                 removeBooksItems={removeBooksItems} ></Books> </div>)
-                
+
             }
           </div>
-          
+
           <hr />
           <div className='flex justify-around mt-5'>
             <p className='font-bold'>Total bids Amount</p>

@@ -1,6 +1,7 @@
-import React from 'react';
+
 
 const Books = ({ books, removeBooksItems }) => {
+    
     // console.log(books);
     // if(books.length === 0){
     //     const show = 
@@ -20,14 +21,20 @@ const Books = ({ books, removeBooksItems }) => {
     //     }
 
     // }
+    // console.log(books.currentBidPrice);
+    // console.log(count);
+  
 
     return (
         <div>
             
+           
+            
+            
 
 
 
-            <div className='flex justify-between p-5 font-bold'>
+            <div className='flex justify-between p-5 font-bold border-2 border-black rounded-2xl mb-2'>
 
                 <div>
                     <img className='h-15' src={books.image} alt="" />
